@@ -220,14 +220,14 @@ textarea {
   justify-content: flex-start;
 }
 .nav__logo{
-  flex-basis: 10%;
+  flex-basis: 5%;
   text-align: center;
 }
 .logo__img{
   flex-basis: 10%;
   text-align: center;
-  width: 115px;
-  height: 150px;
+  width: 75px;
+  height: 100px;
 }
 .list{
   display: flex;
@@ -264,6 +264,7 @@ textarea {
 .introduction{
   display: flex;
   flex-wrap: nowrap;
+  padding-top: 50px;
 }
 .introduction__inner{
 }
@@ -366,7 +367,6 @@ textarea {
 .region__image{
   width: 50%;
   height: auto;
-}
 }
 
 @media only screen and (min-width: 35em) {
