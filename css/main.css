@@ -16,6 +16,7 @@
   --primaryColor: #FAC85E;
 }
 
+
 html {
   color: #222;
   font-size: 1em;
@@ -225,8 +226,8 @@ textarea {
 .logo__img{
   flex-basis: 10%;
   text-align: center;
-  width: 130px;
-  height: 177px;
+  width: 115px;
+  height: 150px;
 }
 .list{
   display: flex;
@@ -271,7 +272,7 @@ textarea {
   justify-content: center;
 }
 .introduction--text{
-  flex-basis: 50%;
+  flex-basis: 60%;
   justify-content: flex-end;
   text-align: right;
 }
@@ -279,35 +280,94 @@ textarea {
   font-size: 65px;
   padding-top: 150px;
 }
-
 .introduction__btn{
   padding: 15px 30px;
   background: #FAC85E;
   border: none;
   font-weight: bold;
 }
-
+.showcasing{
+  display: flex;
+  justify-content: center;
+  flex-basis: 100%;
+  background: #FBFBFB;
+  margin-top: 70px;
+  padding: 50px 0 100px 0;
+}
 .showcase{
   display: flex;
   flex-wrap: wrap;
+  flex-basis: 70%;
 }
 .showcase__title{
   flex-basis: 100%;
+  text-align: center;
+  font-size: 50px;
+}
+.showcase__paragraph{
+  flex-basis: 100%;
+  text-align: center;
+  font-weight: 100;
 }
 .showcase__boxes{
   display: flex;
   flex-wrap: nowrap;
   justify-content: space-around;
+  flex-basis: 100%;
+  padding-top: 50px;
 }
 .showcase__box{
   flex-basis: 30%;
   display: flex;
-  border: 1px solid black;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 50px 0;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.12);
+  /* Note: currently only Safari supports backdrop-filter */
+  backdrop-filter: blur(0px);
+  --webkit-backdrop-filter: blur(0px);
+  background: #fff;
 }
 .box__icon{
-  flex-basis: 10%;
+  flex-basis: 50%;
+  display: flex;
 }
-
+.box__button{
+  min-height: 40px;
+  width: 150px;
+  background: var(--primaryColor);
+  border: 1px solid #aaa;
+}
+.text__header{
+  font-weight: bold;
+  font-size: 25px;
+  padding-top: 20px;
+}
+.text__paragraph{
+  font-weight: 100;
+  font-size: 18px;
+  padding: 10px 60px;
+}
+.region{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+.region__header{
+  font-size: 50px;
+  padding-top: 50px;
+}
+.region__paragraph{
+  font-weight: 100;
+  font-size: 18px;
+}
+.region__image{
+  width: 50%;
+  height: auto;
+}
+}
 
 @media only screen and (min-width: 35em) {
   /* Style adjustments for viewports that meet the condition */
