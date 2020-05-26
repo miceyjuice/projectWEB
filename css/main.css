@@ -630,6 +630,7 @@ button:hover{
   }
   .inputty::before{
     left: 42px;
+    color: #777;
   }
 }
 
