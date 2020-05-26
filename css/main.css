@@ -169,11 +169,11 @@ textarea {
 *
 * For modern browsers
 * 1. The space content is one way to avoid an Opera bug when the
-*    `contenteditable` attribute is included anywhere else in the document.
+*    contenteditable attribute is included anywhere else in the document.
 *    Otherwise it causes space to appear at the top and bottom of elements
-*    that receive the `clearfix` class.
-* 2. The use of `table` rather than `block` is only necessary if using
-*    `:before` to contain the top-margins of child elements.
+*    that receive the clearfix class.
+* 2. The use of table rather than block is only necessary if using
+*    :before to contain the top-margins of child elements.
 */
 
 .clearfix:before,
@@ -235,14 +235,17 @@ textarea {
   list-style-type: none;
   padding: 20px;
 }
-
 .list__el{
   padding: 0 50px;
   text-decoration: none;
 }
+.list__el__link:hover{
+  color: var(--primaryColor);
+}
 .list__el__link{
   text-decoration: none;
   color: var(--fontColorFirst);
+  transition: 0.1s;
 }
 .lining{
   position: absolute;
@@ -284,7 +287,7 @@ textarea {
 .introduction__btn{
   padding: 15px 30px;
   background: #FAC85E;
-  border: none;
+  border: 1px solid #eee;
   font-weight: bold;
 }
 .showcasing{
@@ -338,7 +341,7 @@ textarea {
   min-height: 40px;
   width: 150px;
   background: var(--primaryColor);
-  border: 1px solid #aaa;
+  border: 1px solid #eee;
 }
 .text__header{
   font-weight: bold;
@@ -369,14 +372,156 @@ textarea {
   height: auto;
 }
 
+.information {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  position: relative;
+  justify-content: center;
+  padding-top: 30px;
+}
+
+.information__text {
+  display: flex;
+  flex-basis: 60%;
+  flex-wrap: wrap;
+  color: #111;
+  margin-bottom: 30px;
+}
+
+.information__text p,
+.information__text span  {
+  font-size: 2rem; /* TODO change color  */
+  color: #333;
+  flex-basis: 100%;
+}
+.contact__box{
+  display: flex;
+  justify-content: center;
+  flex-basis: 100%;
+  background: #FBFBFB;
+  padding: 50px 0 150px 0;
+}
+.information__contact {
+  flex-basis: 60%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.information__contact p {
+  flex-basis: 100%;
+}
+.information__contact p::before{
+  display: inline-block;
+  content: "";
+  border-bottom: .1rem solid #ccc;
+  width: 1rem;
+  margin: -0.8rem 1rem;
+  padding-top: 1px;
+  transform: translateY(-1rem);
+}
+.information__contact__icons {
+  flex-basis: 20%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 30px;
+}
+.information__contact__icons img{
+  width: 10%;
+  height: auto;
+}
+.information__text span {
+  color: var(--primaryColor);
+}
+
+.information__form {
+  position: absolute;
+  right: 21%;
+  display: flex;
+  flex-wrap: wrap;
+  box-shadow: 0 0 10px #ccc;
+  padding: 50px 80px 60px 80px;
+  background: #fff;
+  flex-direction: column;
+}
+.inputty{
+  position: relative;
+}
+.inputty input[type="text"],
+.inputty textarea{
+  flex-basis: 100%;
+  padding: 10px;
+  border-radius: 0;
+  border: 1px solid #aaa;
+  margin-top: 40px;
+  width: 300px;
+}
+.inputty::before{
+  content: "";
+  position: absolute;
+  left: 11px;
+  top: 26px;
+  background: #fff;
+  color: #222;
+  padding: 2px 8px;
+}
+.inputty[active]::before{
+  color: var(--primaryColor);
+}
+#name::before{
+  content: "Your Name";
+}
+#mail::before{
+  content: "Mail Address";
+}
+#message::before{
+  content: "Your Message";
+}
+#button{
+  text-align: right;
+}
+button{
+  transition: 0.3s;
+}
+button:hover{
+  background: transparent !important;
+  border: 1px solid var(--primaryColor) !important;
+  font-weight: bold;
+  color: var(--primaryColor);
+  cursor: pointer;
+}
+.information__form textarea{
+  height: 150px;
+  resize: none;
+}
+.information__form button{
+  padding: 15px 60px;
+  text-transform: uppercase;
+  margin-top: 40px;
+  background: var(--primaryColor);
+  border: 1px solid #eee;
+  font-weight: bold;
+  justify-self: flex-end;
+}
+.credits{
+  display: flex;
+  justify-content: center;
+  padding: 50px 0;
+}
+.credits__paragraph{
+  flex-basis: 70%;
+  text-align: center;
+  color: #333;
+}
+
 @media only screen and (min-width: 35em) {
   /* Style adjustments for viewports that meet the condition */
 }
 
 @media print,
-  (-webkit-min-device-pixel-ratio: 1.25),
-  (min-resolution: 1.25dppx),
-  (min-resolution: 120dpi) {
+(-webkit-min-device-pixel-ratio: 1.25),
+(min-resolution: 1.25dppx),
+(min-resolution: 120dpi) {
   /* Style adjustments for high resolution devices */
 }
 
@@ -408,7 +553,7 @@ textarea {
   }
   /*
      * Don't show links that are fragment identifiers,
-     * or use the `javascript:` pseudo protocol
+     * or use the javascript: pseudo protocol
      */
   a[href^="#"]:after,
   a[href^="javascript:"]:after {
@@ -444,4 +589,3 @@ textarea {
     page-break-after: avoid;
   }
 }
-
