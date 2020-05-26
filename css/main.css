@@ -616,6 +616,9 @@ button:hover{
   .information__text{
     flex-basis: 80%;
   }
+  .information__contact{
+    flex-basis: 80%;
+  }
   .information__contact__icons{
     flex-basis: 100%;
   }
