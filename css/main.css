@@ -431,6 +431,9 @@ textarea {
   width: 10%;
   height: auto;
 }
+.information__contact__icons img:hover{
+  cursor: pointer;
+}
 .information__text span {
   color: var(--primaryColor);
 }
@@ -514,7 +517,9 @@ button:hover{
   text-align: center;
   color: #333;
 }
-
+#alertMessage{
+  color: #ff0248;
+}
  /*Extra small devices (portrait phones, less than 576px)*/
 @media (max-width: 575.98px) {
   .nav{

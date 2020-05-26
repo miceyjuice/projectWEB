@@ -162,18 +162,19 @@
       </p>
 
     </div>
-    <form class="information__form">
+    <form name="messageForm" class="information__form" onsubmit="validateForm()">
       <div class="inputty" id="name">
-        <input type="text">
+        <input type="text" name="yourName">
       </div>
       <div class="inputty" id="mail">
-        <input type="text">
+        <input type="text" name="yourMail">
       </div>
       <div class="inputty" id="message">
-        <textarea ></textarea>
+        <textarea name="message"></textarea><br>
+        <span id="alertMessage"></span>
       </div>
       <div class="inputty" id="button">
-        <button type="submit">send</button>
+        <button id="submit" type="submit">send</button>
       </div>
     </form>
     <div class="contact__box">
