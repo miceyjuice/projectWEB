@@ -269,8 +269,6 @@ textarea {
   flex-wrap: nowrap;
   padding-top: 50px;
 }
-.introduction__inner{
-}
 .introduction--image{
   flex-basis: 50%;
   justify-content: center;
@@ -283,6 +281,9 @@ textarea {
 .introduction__header{
   font-size: 65px;
   padding-top: 150px;
+}
+.introduction__paragraph{
+  font-weight: 100;
 }
 .introduction__btn{
   padding: 15px 30px;
@@ -514,8 +515,131 @@ button:hover{
   color: #333;
 }
 
-@media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */
+ /*Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 575.98px) {
+  .nav{
+    justify-content: unset;
+  }
+  .nav__side__left{
+    display: none;
+  }
+  .nav__side__right{
+    display: none;
+  }
+  .nav__logo{
+    padding: 10px 0 0 40px;
+  }
+  .nav__logo img {
+    width: 56px;
+    height: auto;
+  }
+  .introduction{
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .introduction--image img{
+    width: 200px;
+    height: auto;
+  }
+  .introduction--image{
+    flex-basis: 100%;
+    justify-content: center;
+    text-align: center;
+  }
+  .introduction--text{
+    flex-basis: 90%;
+    justify-content: center;
+    text-align: center;
+  }
+  .introduction__header{
+    font-size: 35px;
+    padding-top: 50px;
+  }
+  .showcase{
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 100%;
+    text-align: center;
+    justify-content: center;
+  }
+  .showcase__title{
+    flex-basis: 90%;
+    text-align: center;
+    font-size: 34px;
+  }
+  .showcase__paragraph{
+    flex-basis: 90%;
+  }
+  .showcase__boxes{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    flex-basis: 100%;
+    padding-top: 0;
+  }
+  .showcase__box{
+    flex-basis: 90%;
+    display: flex;
+    margin-top: 30px;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 50px 0;
+  }
+  .region__header{
+    font-size: 34px;
+  }
+  .region__paragraph{
+    font-size: 14px;
+  }
+  .region__image{
+    width: 100%;
+  }
+  .information__form{
+    position: unset;
+    padding: 10px 0 50px 0;
+    flex-basis: 100%;
+    text-align: center;
+    border-top: 1px solid #eee;
+    box-shadow: none;
+  }
+  .information__form button{
+    margin-right: 25px;
+  }
+  .information__text p,
+  .information__text span{
+    font-size: 1.5rem;
+  }
+  .information__text{
+    flex-basis: 80%;
+  }
+  .information__contact__icons{
+    flex-basis: 100%;
+  }
+  .contact__box{
+    padding: 50px 0;
+  }
+  .credits__paragraph{
+    font-size: 0.8rem;
+  }
+  .inputty::before{
+    left: 42px;
+  }
+}
+
+ /*Small devices (landscape phones, less than 768px)*/
+@media (max-width: 767.98px) {
+
+}
+
+ /*Medium devices (tablets, less than 992px)*/
+@media (max-width: 991.98px) {
+
+}
+
+ /*Large devices (desktops, less than 1200px)*/
+@media (max-width: 1199.98px) {
+
 }
 
 @media print,
