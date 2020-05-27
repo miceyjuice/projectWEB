@@ -640,6 +640,10 @@ button:hover{
     left: 42px;
     color: #777;
   }
+  .inputty input[type="text"],
+  .inputty textarea {
+    width: 85%;
+  }
 }
 
  /*Small devices (landscape phones, less than 768px)*/
@@ -663,7 +667,7 @@ button:hover{
   .information__text span{
     font-size: 1.5rem;
     flex-basis: unset;
-    width: 25%;
+    width: 30%;
   }
   .text__paragraph{
     font-size: 14px;
@@ -679,10 +683,20 @@ button:hover{
   .introduction__header{
     padding-top: 100px;
   }
+  .showcase__boxes{
+    flex-wrap: wrap;
+  }
+  .showcase__box{
+    flex-basis: 45%;
+  }
+  .showcase__box:last-child{
+    flex-basis: 95%;
+    margin-top: 5%;
+  }
 }
 
  /*Large devices (desktops, less than 1200px)*/
-@media (max-width: 1199.98px) {
+@media (min-width: 1025px) and (max-width: 1280px) {
   .showcase{
     flex-basis: 90%;
   }
