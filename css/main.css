@@ -647,8 +647,58 @@ button:hover{
 }
 
  /*Small devices (landscape phones, less than 768px)*/
-@media (max-width: 767.98px) {
-
+@media (min-width: 481px) and (max-width: 767px) {
+  .showcase__boxes{
+    flex-wrap: wrap;
+  }
+  .showcase__box{
+    flex-basis: 100%;
+    margin-top: 5%;
+  }
+  .nav{
+    flex-wrap: nowrap;
+  }
+  .list__el{
+    padding: 0 25px;
+    font-size: 14px;
+  }
+  .information{
+    justify-content: center;
+  }
+  .introduction--text{
+    flex-basis: 40%;
+  }
+  .introduction--image{
+    flex-basis: 50%;
+    justify-content: flex-end;
+    display: flex;
+  }
+  .introduction__image{
+    width: 90%;
+    height: auto;
+  }
+  .information__text{
+    padding-left: 30px;
+    flex-basis: 41%;
+  }
+  .information__text p,
+  .information__text span{
+    font-size: 1.2rem;
+    flex-basis: unset;
+    width: 100%;
+  }
+  .information__form{
+    position: unset;
+    margin-bottom: 50px;
+    width: 50%;
+  }
+  .information__contact{
+    flex-basis: 36%;
+    padding-left: 30px;
+  }
+  .information__contact__icons{
+    flex-basis: 60%;
+  }
 }
 
  /*Medium devices (tablets, less than 992px)*/
@@ -661,13 +711,22 @@ button:hover{
     padding: 0 30px;
   }
   .information__form{
-    left: 35%;
+    position: unset;
+    margin-bottom: 50px;
+    width: 50%;
+  }
+  .information__text{
+    flex-basis: 100%;
+    padding-left: 176px;
   }
   .information__text p,
   .information__text span{
     font-size: 1.5rem;
     flex-basis: unset;
-    width: 30%;
+    width: 100%;
+  }
+  .information__contact__icons{
+    flex-basis: 50%;
   }
   .text__paragraph{
     font-size: 14px;
@@ -701,8 +760,8 @@ button:hover{
     flex-basis: 90%;
   }
   .information__form{
-    left: 35%;
-    width: 35%;
+    left: 50%;
+    width: 30%;
   }
   .information__text{
     flex-basis: 90%;
