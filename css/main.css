@@ -440,16 +440,18 @@ textarea {
 
 .information__form {
   position: absolute;
-  right: 21%;
+  left: 55%;
   display: flex;
   flex-wrap: wrap;
   box-shadow: 0 0 10px #ccc;
   padding: 50px 80px 60px 80px;
   background: #fff;
   flex-direction: column;
+  width: 20%;
 }
 .inputty{
   position: relative;
+  width: 100%;
 }
 .inputty input[type="text"],
 .inputty textarea{
@@ -458,7 +460,7 @@ textarea {
   border-radius: 0;
   border: 1px solid #aaa;
   margin-top: 40px;
-  width: 300px;
+  width: 95%;
 }
 .inputty::before{
   content: "";
@@ -521,7 +523,7 @@ button:hover{
   color: #ff0248;
 }
  /*Extra small devices (portrait phones, less than 576px)*/
-@media (max-width: 575.98px) {
+@media (min-width: 320px) and (max-width: 480px)  {
   .nav{
     justify-content: unset;
   }
@@ -550,6 +552,7 @@ button:hover{
     flex-basis: 100%;
     justify-content: center;
     text-align: center;
+    display: flex;
   }
   .introduction--text{
     flex-basis: 90%;
@@ -645,13 +648,86 @@ button:hover{
 }
 
  /*Medium devices (tablets, less than 992px)*/
-@media (max-width: 991.98px) {
+@media (min-width: 768px) and (max-width: 1024px) {
 
+  .introduction--text{
+    flex-basis: 40%;
+  }
+  .list__el{
+    padding: 0 30px;
+  }
+  .information__form{
+    left: 35%;
+  }
+  .information__text p,
+  .information__text span{
+    font-size: 1.5rem;
+    flex-basis: unset;
+    width: 25%;
+  }
+  .text__paragraph{
+    font-size: 14px;
+    padding: 10px 30px;
+  }
+  .introduction--image{
+    justify-content: flex-end;
+    display: flex;
+  }
+  .introduction__image{
+    width: 80%;
+  }
+  .introduction__header{
+    padding-top: 100px;
+  }
 }
 
  /*Large devices (desktops, less than 1200px)*/
 @media (max-width: 1199.98px) {
-
+  .showcase{
+    flex-basis: 90%;
+  }
+  .information__form{
+    left: 35%;
+    width: 35%;
+  }
+  .information__text{
+    flex-basis: 90%;
+    font-size: 14px;
+  }
+  .information__contact{
+    flex-basis: 30%;
+    padding-left: 30px;
+  }
+  .information__contact__icons{
+    flex-basis: 100%;
+  }
+  .region__image{
+    width: 70%;
+  }
+  .introduction--text{
+    flex-basis: 40%;
+  }
+  .contact__box{
+    justify-content: unset;
+  }
+  .box__icon{
+    flex-basis: 100%;
+    justify-content: center;
+  }
+  .box__icon img {
+    width: 60%;
+  }
+  .text__paragraph{
+    font-size: 14px;
+    padding: 10px 30px;
+  }
+  .introduction__image{
+    justify-content: flex-end;
+    display: flex;
+  }
+  .introduction__image img{
+    width: 80%;
+  }
 }
 
 @media print,
