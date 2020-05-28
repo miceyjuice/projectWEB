@@ -14,6 +14,8 @@
 
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
 
   <meta name="theme-color" content="#fafafa">
 </head>
@@ -52,7 +54,7 @@
       </ul>
     </div>
   </nav>
-  <section class="introduction">
+  <section class="introduction" data-aos="fade-in" data-aos-delay="100">
     <div class="introduction__inner introduction--image">
       <img src="./img/intro_phone.png" alt="intro_img" class="introduction__image">
     </div>
@@ -70,7 +72,7 @@
       </button>
     </div>
   </section>
-  <div class="showcasing">
+  <div class="showcasing" data-aos="fade-in" data-aos-delay="200">
     <section class="showcase">
       <h1 class="showcase__title">
         Satisfaction guaranteed
@@ -139,7 +141,7 @@
     </section>
   </div>
 
-  <section class="region">
+  <section class="region" data-aos="fade-in" data-aos-delay="200">
     <h1 class="region__header">
       Protection reach
     </h1>
@@ -147,7 +149,7 @@
       Our app is used by <strong>153 477</strong> people today. Join our community to make your device secure.
     </p>
     <div class="region__map">
-      <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="auto" viewBox="0, 0, 950, 650">
+      <svg xmlns="http://www.w3.org/2000/svg" width="90%" height="auto" viewBox="0, 0, 950, 650">
         <title>APP usage map</title>
         <defs>
           <style type="text/css">
@@ -308,7 +310,7 @@
       </svg>
     </div>
   </section>
-  <section class="information">
+  <section class="information" data-aos="fade-in" data-aos-delay="200">
     <div class="information__text">
       <p>
         Got any questions, <br>
@@ -352,7 +354,7 @@
       </div>
     </div>
   </section>
-  <footer class="credits">
+  <footer class="credits" data-aos="fade-in" data-aos-delay="200">
     <p class="credits__paragraph">
       Copyright © 2020 Product_Theme. All rights reserved.
       Created by Paweł Szumiec
@@ -365,6 +367,11 @@
 <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.4.1.min.js"><\/script>')</script>
 <script src="js/plugins.js"></script>
 <script src="js/main.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+
 
 <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
 <script>

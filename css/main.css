@@ -368,11 +368,9 @@ textarea {
   font-weight: 100;
   font-size: 18px;
 }
-.region__image{
-  width: 50%;
-  height: auto;
+.region__map{
+  margin: 50px 0 20px 0;
 }
-
 .information {
   display: flex;
   flex-wrap: wrap;
@@ -392,7 +390,7 @@ textarea {
 
 .information__text p,
 .information__text span  {
-  font-size: 2rem; /* TODO change color  */
+  font-size: 2rem;
   color: #333;
   flex-basis: 100%;
 }
@@ -524,6 +522,11 @@ button:hover{
 }
 .state path{
   transition: 0.3s;
+  position: relative;
+}
+.state path:hover::after{
+  position: absolute;
+  top:10%;
 }
 .state path:hover{
   fill: var(--primaryColor);
