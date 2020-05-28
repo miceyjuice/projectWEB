@@ -522,6 +522,13 @@ button:hover{
 #alertMessage{
   color: #ff0248;
 }
+.state path{
+  transition: 0.3s;
+}
+.state path:hover{
+  fill: var(--primaryColor);
+  cursor: pointer;
+}
  /*Extra small devices (portrait phones, less than 576px)*/
 @media (min-width: 320px) and (max-width: 480px)  {
   .nav{
