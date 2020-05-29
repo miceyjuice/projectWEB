@@ -457,10 +457,11 @@ textarea {
 .inputty textarea{
   flex-basis: 100%;
   padding: 10px;
-  border-radius: 0;
-  border: 1px solid #aaa;
+  border-radius: 5px;
+  border: 2px solid #aaa;
   margin-top: 40px;
   width: 95%;
+  transition: .5s;
 }
 .inputty::before{
   content: "";
@@ -535,7 +536,7 @@ button:hover{
   cursor: pointer;
 }
 .fillIt{
-  border: 1px solid #ff0248 !important;
+  border: 2px solid #ff0248 !important;
   border-radius: 5px !important;
 }
 .information__contact__icons img:hover{
