@@ -23,7 +23,12 @@ submitButton.addEventListener("click", function (e) {
       }
       alertBox.innerHTML="Every field must be filled!";
       return false;
-    }else alertBox.innerHTML="";
+    }else {
+      alertBox.innerHTML="";
+      name.classList.remove("fillIt");
+      mail.classList.remove("fillIt");
+      message.classList.remove("fillIt");
+    }
   }
 );
 
